@@ -1,4 +1,4 @@
-function Em = Energie(m1, m2, L1, L2, g, X, Xp, dt, nbPasTemps)
+function Em = Energie(m1, m2, L1, L2, g, X, Xp, ~, nbPasTemps)
     %% ENERGIE Calcule l'énergie mécanique du pendule au cours du temps
     %   L'énergie mécanique étant la somme de l'énergie cinétique et potentielle à chaque pas de temps
     %

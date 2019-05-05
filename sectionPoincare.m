@@ -13,8 +13,8 @@ function Ps = sectionPoincare(X, Xp, nbPasTemps)
     	%test de croisement de l'axe vertical avec le produit de deux valeurs de ?2 successives
         if(X(1,i)*X(1,i+1)<=0)
             if(Xp(1,i)<0)
-                Ps(1, p) = X(2,i);
-                Ps(2, p) = Xp(2,i);
+                Ps(1, p) = X(2,i);  %#ok<AGROW>
+                Ps(2, p) = Xp(2,i); %#ok<AGROW>
                 p = p+1;
             end
         end

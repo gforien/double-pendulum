@@ -23,8 +23,8 @@ function Bf = diagrammeBifurcation(m1, m2, L1, L2, g, dt, nbPasTemps, pas)
             %test de croisement de l'axe vertical avec le produit de deux valeurs de theta2 successives
             if(Xraph(1,j)*Xraph(1,j+1)<=0)
                 if(dXraph(1,j)<0)
-                    Bf(1,i)=theta(i);
-                    Bf(q,i)=dXraph(2,j);
+                    Bf(1,i)=theta(i);     %#ok<AGROW>
+                    Bf(q,i)=dXraph(2,j);  %#ok<AGROW>
                     q=q+1;
                 end
             end
